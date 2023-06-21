@@ -8,7 +8,7 @@ query me {
         email
         bookCount
         savedBooks{
-        input:(input)
+        input:(input:SaveBookInput)
         }
 
     }
