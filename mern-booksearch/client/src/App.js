@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
+import LoginForm from './components/LoginForm';
 
 
 
@@ -35,6 +36,10 @@ function App() {
           <Route 
             path='*'
             element={<h1 className='display-2'>Wrong page!</h1>}
+          />
+          <Route
+          path = '/login'
+          element={<LoginForm />}
           />
         </Routes>
       </>
