@@ -1,25 +1,9 @@
-const {AuthenticationError} = require('apollo-sever-express');
+const {AuthenticationError} = require('apollo-server-express');
 const {Book, User} = require('../models');
 const {signToken} = require('../utils/auth');
 
 const resolvers = {
-    Query:{
-        getSingleUser: async (parent, {username = null, params}) => {
-            if (username) {
-                return User.findOne({username}).populate('savedBooks');
-            }
-            return User.findOne(params).populate('savedBooks');
-
-            },
-        me: async (parent, args, context) => {
-            if (context.user) {
-                return User.findOne({_id: context.user._id}).populate('savedBooks');
-            }
-            throw new AuthenticationError('You need to be logged in!');
-        
-    
-    }
- },
+   
 
     Mutation: {
    
