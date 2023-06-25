@@ -40,10 +40,10 @@ mutation Mutation {
       }
     }
   }
-;
+`;
 
-Mutation($bookId: String!) {
-    removeBook(bookId: $bookId) {
+export const REMOVE_BOOK = gql`
+    mutation removeBook(bookId: $bookId) {
       _id
       username
       email
@@ -57,5 +57,9 @@ Mutation($bookId: String!) {
         link
       }
     }
-  }
-   `; 
+  `;
+
+export const UPDATE_BOOK = gql`
+   
+
+   
