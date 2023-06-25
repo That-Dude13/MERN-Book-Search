@@ -7,9 +7,17 @@ query me {
         username
         email
         bookCount
-        savedBooks{
-        input:(input:SaveBookInput)
+        savedBooks{   
+            
+            bookId
+            authors
+            description
+            title
+            image
+            link
+          }
         }
+      }
 
     }
     `;

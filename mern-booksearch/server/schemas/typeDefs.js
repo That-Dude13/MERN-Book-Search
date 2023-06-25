@@ -6,7 +6,7 @@ input SaveBookInput {
     authors: [String]
     description: String
     title: String
-    bookId: ID!
+    bookId: String
     image: String
     link: String
   }
@@ -18,7 +18,7 @@ input SaveBookInput {
     savedBooks: [Book]
   }
   type Book {
-    bookId: ID!
+    bookId: String
     authors: [String]
     title: String
     description: String
@@ -30,7 +30,7 @@ input SaveBookInput {
     user: User
   }
   type Query {
-    me: [User]
+    me: User
   }
   type Mutation {
     login(email: String!, password: String!): Auth
