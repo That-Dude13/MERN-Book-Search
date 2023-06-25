@@ -13,6 +13,7 @@ const resolvers = {
                 return userData;
             }
         },
+    },
 
     Mutation: {
    
@@ -68,8 +69,8 @@ const resolvers = {
         }
     },
    },
- },
-};
+ };
+
 
 
 module.exports = resolvers;
