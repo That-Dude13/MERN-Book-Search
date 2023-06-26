@@ -59,7 +59,7 @@ export const REMOVE_BOOK = gql`
     }
   `;
 
-export const UPDATE_BOOK = gql`
+export const UPDATE_BOOK = gql
    
 
    
