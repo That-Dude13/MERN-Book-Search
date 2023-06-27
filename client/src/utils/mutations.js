@@ -43,7 +43,7 @@ mutation Mutation {
 `;
 
 export const REMOVE_BOOK = gql`
-    mutation removeBook(bookId: $bookId) {
+    mutation removeBook(bookId: bookId) {
       _id
       username
       email
